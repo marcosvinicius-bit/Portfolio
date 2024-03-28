@@ -1,0 +1,161 @@
+@charset "utf-8";
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "copy";
+    src: url('Copyduck.otf');
+}
+
+body {
+    background-color: rgb(241, 239, 118);
+}
+
+table {
+    font-size: larger;
+    position: relative;
+    margin: 10%;
+    text-align: left;
+    padding: 0%;
+}
+
+img {
+    height: 300px;
+    border-radius: 20px;
+
+}
+
+
+h1 {
+    font-family: copy;
+    text-align: center;
+    margin: 5%;
+    color: rgb(0, 0, 0)
+}
+
+p {
+    line-height: 1.5em;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 5%;
+    font-size: larger;
+    animation: surgir 10s ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0 cover 40%;
+    border: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+@keyframes surgir {
+    from {
+        translate: -100vw 0;
+        opacity: 0;
+
+    }
+
+    to {
+        translate: 0 0;
+        opacity: 1;
+    }
+}
+
+
+.formulario {
+    text-align: center;
+    border-radius: 0px;
+}
+
+footer {
+    font-family: copy;
+    padding: 0%;
+    text-align: center;
+    margin: 10% auto;
+    font-size: larger;
+    color: rgb(100, 25, 123);
+}
+
+.insta {
+    width: 24px;
+    height: 24px;
+}
+
+.git {
+    width: 50px;
+    height: 24px;
+}
+
+.logo {
+    transform: translate(50% 50%);
+    margin-right: 55%;
+    margin-top: -300px;
+    margin-left: 10px;
+    position: relative;
+}
+
+@keyframes text-flicker-out-glow {
+    0% {
+        opacity: 1;
+
+    }
+
+    13.9% {
+        opacity: 1;
+
+    }
+
+    14% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    14.9% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    15% {
+        opacity: 1;
+
+    }
+
+    22.9% {
+        opacity: 1;
+
+    }
+
+    23% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    24.9% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    25% {
+        opacity: 1;
+
+    }
+
+    35% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    39.9% {
+        opacity: 0;
+        text-shadow: none;
+    }
+}
+
+.text-flicker-out-glow {
+    -webkit-animation: text-flicker-out-glow 5.5s linear both;
+    animation: text-flicker-out-glow 1.5s linear infinite;
+}

@@ -1,0 +1,206 @@
+@charset "utf-8";
+
+body {
+    background-color: rgb(223, 222, 154);
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.logo {
+    transform: translate(50% 50%);
+    margin-right: 55%;
+    margin-top: -250px;
+    margin-left: 10px;
+    position: relative;
+}
+
+.logo2 {
+    position: absolute;
+    right: 0;
+}
+
+
+@font-face {
+    font-family: "copy";
+    src: url('Copyduck.otf');
+}
+
+h1 {
+    font-family: 'Copy';
+    text-align: center;
+    padding: 1%;
+    color: rgb(0, 0, 0);
+}
+
+p {
+    animation-duration: 2s;
+    animation-name: slidein;
+    margin: 5%;
+    text-align: center;
+    line-height: 2.0em;
+    font-size: larger;
+}
+
+table {
+    font-size: larger;
+    position: relative;
+    margin: 2%;
+    text-align: center;
+
+}
+
+.portifolio {
+    text-align: center;
+}
+
+.portifolio img{
+    width:300px;
+    height: 220px;
+
+}
+
+.text-flicker-out-glow {
+    -webkit-animation: text-flicker-out-glow 2.5s linear both;
+    animation: text-flicker-out-glow 2.0s linear infinite;
+}
+
+.softskills {
+    text-align: center;
+}
+
+.frase p {
+    text-align: end;
+    line-height: normal;
+}
+
+
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2em;
+    height: 300px;
+    margin: 10%;
+    background-color: rgb(231, 184, 227);
+    border-radius: 50px;
+    animation: surgir 2s ease-in-out;    
+}
+
+
+img {
+    height: 300px;
+    border-radius: 20px;
+}
+
+
+@keyframes slidein {
+    from {
+        
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+    
+        margin-left: 0%;
+        width: 100%;
+
+    }
+}
+
+.paragrafo2 p{
+    text-align: center;
+    padding: 20%;
+}
+
+
+@keyframes text-flicker-out-glow {
+    0% {
+        opacity: 1;
+
+    }
+
+    13.9% {
+        opacity: 1;
+
+    }
+
+    14% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    14.9% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    15% {
+        opacity: 1;
+
+    }
+
+    22.9% {
+        opacity: 1;
+
+    }
+
+    23% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    24.9% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    25% {
+        opacity: 1;
+
+    }
+
+    35% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    39.9% {
+        opacity: 0;
+        text-shadow: none;
+    }
+}
+
+
+footer {
+    text-align: center;
+    font-size: 14px;
+    font-size: larger;
+    color:rgb(7, 0, 0);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.insta {
+    width: 24px;
+    height: 24px;
+}
+
+.git {
+    width: 50px;
+    height: 24px;
+}
+
+.btn {
+    display: inline-block;
+    color: #e41313;
+    padding: 0.8em 3.8em;
+    margin-top: 2em;
+    border-radius: 670px;
+}
+
+@media screen and
+(min-width: 550px) and (max-width: 440px){}
